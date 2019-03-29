@@ -45,6 +45,7 @@ legally required, to do the following:
     Learning Multi-Domain Convolutional Neural Networks for Visual Tracking
     CVPR, 2016.
 
+```bash
     @InProceedings{nam2016mdnet,
         author = {Nam, Hyeonseob and Han, Bohyung},
         title = {Learning Multi-Domain Convolutional Neural Networks for Visual Tracking},
@@ -52,6 +53,7 @@ legally required, to do the following:
         month = {June},
         year = {2016}
     } 
- 
+```
+
 This copyright notice must be retained with all copies of the software,
 including any modified or derived versions.

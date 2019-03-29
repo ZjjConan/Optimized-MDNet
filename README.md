@@ -1,12 +1,11 @@
 ## Optimized MDNet for visual object tracking
 
-This repository contains a [MatConvNet](http://www.vlfeat.org/matconvnet/) re-implementation for [MDNet](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Nam_Learning_Multi-Domain_Convolutional_CVPR_2016_paper.pdf) algorithm, which is  ~10x and ~2x faster than the original matlab and python implementations, respectively.
+This repository contains a [MatConvNet](http://www.vlfeat.org/matconvnet/) re-implementation for [MDNet](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Nam_Learning_Multi-Domain_Convolutional_CVPR_2016_paper.pdf) algorithm, which is  ~10x and ~6x faster than the original matlab and python implementations, respectively.
 
 - [MDNet-matlab-Org](https://github.com/HyeonseobNam/MDNet)
 
 - [MDNet-python](https://github.com/HyeonseobNam/py-MDNet)
 
---------------------------------------------
 
 ## Detail Comparisons
 ```shell
@@ -31,7 +30,6 @@ This repository contains a [MatConvNet](http://www.vlfeat.org/matconvnet/) re-im
 
 All trackers are benchmarked on a single GPU (GTX 1080).
 
----------------------------------------
 
 ## Requirements and Dependencies
 
