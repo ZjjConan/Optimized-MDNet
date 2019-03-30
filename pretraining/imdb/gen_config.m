@@ -26,7 +26,7 @@ switch(dataset)
         end
         
         % parse img list
-        config.imgList = parseImg(config.imgDir);
+        config.imgList = parse_img(config.imgDir);
         switch(config.seqName)
             case 'David'
                 config.imgList = config.imgList(300:end);

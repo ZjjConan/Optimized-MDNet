@@ -6,9 +6,9 @@ addpath('trainFcn');
 
 % Prepare a CNN model for learning MDNet (windows)
 opts.initModel = 'D:/CNNModel/imagenet-vgg-m.mat';
-opts.imdbPath = 'data/imdb_vot_otb.mat';
+opts.imdbPath = 'data/imdb_otb_vot.mat';
 opts.expDir = 'data/snapshot/';
-opts.outModelDir = '../models/mdnet_vot_otb.mat';
+opts.outModelDir = '../models/mdnet_otb_vot.mat';
 
 % load imdb
 imdb = load(opts.imdbPath);

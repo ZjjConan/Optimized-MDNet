@@ -2,14 +2,21 @@
 
 addpath('imdb');
 
-opts.saveDir = 'data/imdb_vot_otb.mat';
+% vot training for otb
+% opts.saveDir = 'data/imdb_vot_otb.mat';
+% opts.vidListDir = {'seqList', ...
+%                    'seqList', ...
+%                    'seqList'};
+% opts.vidList = {'vot13-otb.txt', 'vot14-otb.txt', 'vot15-otb.txt'};
+% opts.vidDir = {'D:/Dataset/Video/vot2013', 'D:/Dataset/Video/vot2014', 'D:/Dataset/Video/vot2015'};
+% opts.vidName = 'vot';
 
-opts.vidListDir = {'seqList', ...
-                   'seqList', ...
-                   'seqList'};
-opts.vidList = {'vot13-otb.txt', 'vot14-otb.txt', 'vot15-otb.txt'};
-opts.vidDir = {'D:/Dataset/Video/vot2013', 'D:/Dataset/Video/vot2014', 'D:/Dataset/Video/vot2015'};
-opts.vidName = 'vot';
+% otb training for vot15
+opts.saveDir = 'data/imdb_otb_vot.mat';
+opts.vidListDir = {'seqList'};
+opts.vidList = {'otb-vot15.txt'};
+opts.vidDir = {'D:/Dataset/Video/OTB'};
+opts.vidName = 'otb';
 
 imdb = mdnet_setup_imdb(opts);
 

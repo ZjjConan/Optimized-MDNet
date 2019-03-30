@@ -14,7 +14,7 @@ This repository contains a [MatConvNet](http://www.vlfeat.org/matconvnet/) re-im
                 |-------------------------------------------------------------------|
                 | OTB-2015  |  67.9 |  65.2   |       66.4       |      67.2        |
                 |-------------------------------------------------------------------|
-                | VOT-2015  |  37.8 |   --    |     On going     |    On going      |
+                | VOT-2015  |  37.8 |   --    |       36.8       |      39.3        |
                 |-------------------------------------------------------------------|
                 | FPS (OTB) |   ~1  |   ~2    |       ~13        |      ~13         |
                 |-------------------------------------------------------------------|
@@ -24,12 +24,11 @@ This repository contains a [MatConvNet](http://www.vlfeat.org/matconvnet/) re-im
 
 - pyMDNet: python implementation
 
-- MDNet-Org (Ours): our implementation with default parameters (see `setting_mdnet_org`)
+- MDNet-Org (Ours): our implementation using default parameters (see `setting_mdnet_org`)
 
-- MDNet-Opt (Ours): our implementation with our settings (see `setting_mdnet_opt`)
+- MDNet-Opt (Ours): our implementation using our settings (see `setting_mdnet_opt`)
 
-All trackers are benchmarked on a single GPU (GTX 1080).
-
+All trackers are benchmarked on OTB-2015 dataset using a single GPU (GTX 1080).
 
 ## Requirements and Dependencies
 
@@ -69,6 +68,12 @@ To run pre-trained MDNet for OTB testing, please follow these steps:
     `mdnet_vot_otb:` training on VOT13/14/15 datasets for OTB testing.
 
     `mdnet_otb_vot:` training on OTB dataset for VOT15 testing.
+
+5. For VOT testing
+
+    - copy files in `vot/vot_tracker_settings` into your own vot workspace.
+
+    - changes paths in `tracker_OptMDNet_Opt` or `tracker_OptMDNet_Opt` for </p></p> tracking with different parameters.
 
 ### Training Your Own Model
 

@@ -10,10 +10,9 @@ try
     opts.netFile = netFile;
     opts.verbose = 0;
     opts.useGpu = 1;
-    opts.numSamples = 256;
     
-    trackerOpts = settingFcn(opts);
-    [trackerOpts, varargin] = vl_argparse(trackerOpts, varargin);
+    runOpts = settingFcn(opts);
+    [runOpts, varargin] = vl_argparse(runOpts, varargin);
             
     traxserver('setup', 'rectangle', {'path'});
     while true
@@ -27,11 +26,11 @@ try
         img = read_img(image);
 
         if ~isempty(region)
-            state = mdnet_state_initialize(img, region, trackerOpts);
-            state = mdnet_initialize(state, img);
+            state = runOpts.state_initialize(img, region, runOpts);
+            state = runOpts.initialize(state, img);
         else
-            state = mdnet_track(state, img);
-            state = mdnet_update(state);
+            state = runOpts.track(state, img);
+            state = runOpts.update(state);
         end
 
         if isempty(state.result(state.currFrame, :))
