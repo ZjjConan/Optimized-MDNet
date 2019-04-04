@@ -10,9 +10,9 @@ function setup_optmdnet()
     run([matconvnet_path '/matlab/vl_setupnn']);
     
     root = fileparts(fileparts(mfilename('fullpath'))) ;
-    addpath(fullfile(root, 'OptMDNet')) ;
+    addpath(fullfile(root, 'Optimized-MDNet')) ;
 
-    addpath(genpath(fullfile(root, 'OptMDNet/tracking')));
-    addpath(fullfile(root, 'OptMDNet/utils'));
-    addpath(fullfile(root, 'OptMDNet/vot'));
+    addpath(genpath(fullfile(root, 'Optimized-MDNet/tracking')));
+    addpath(fullfile(root, 'Optimized-MDNet/utils'));
+    addpath(fullfile(root, 'Optimized-MDNet/vot'));
 end
