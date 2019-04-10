@@ -7,6 +7,9 @@ function [videos, cfgReader] = prepare_videos(dataset)
     elseif strcmpi(dataset, 'OTB2015')
         videos = OTB2015();
         cfgReader = @otb_info_loader;
+    elseif strcmpi(dataset, 'demo')
+        videos = {'Bolt2'};
+        cfgReader = @otb_info_loader;
     end
 
 end

@@ -16,7 +16,7 @@ function eval_tracker_OPE(varargin)
     opts = vl_argparse(opts, varargin);
     
     % create dir if not exist
-    if ~exist([opts.savePath opts.trackerName], 'file')
+    if ~exist([opts.savePath opts.trackerName], 'file') && opts.saveResult
         mkdir([opts.savePath opts.trackerName]);
     end
 

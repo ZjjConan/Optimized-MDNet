@@ -3,9 +3,9 @@ tracker_label = 'OptMDNet_Opt';
 tracker_interpreter = 'matlab';
 tracker_trax = true;
 
-tracker_path = 'F:/Research/tracker_zoo/OptMDNet/vot/';
+tracker_path = 'F:/Research/tracker_zoo/Optimized-MDNet/';
 
-netFile = 'F:/Research/tracker_zoo/OptMDNet/models/mdnet_otb_vot.mat';
+netFile = 'F:/Research/tracker_zoo/Optimized-MDNet/models/mdnet_otb_vot.mat';
 settingFcn = '@setting_mdnet_opt';
 fullCommand = ['tracker_VOT(', '''' netFile, ''',', settingFcn, ')'];
 
